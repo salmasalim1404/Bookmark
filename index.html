@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./eb3fcec56c95c2eb7ded9201e51550a2-bookmark-icon-flat.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="item py-4">
+        <h1 class="text-center mx-auto mt-5">Bookmarker</h1>
+        <div class="brdr"></div>
+    <h2 class="text-center mx-auto mt-5"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+       
+    <i class="fa-solid fa-book-bookmark"></i>
+    <label for="sn">Site Name</label>
+    <input type="text" class="mt-4 form-control" id="sn" >
+    <i class="fa-solid fa-link"></i>
+    <label for="sd">Site URL</label>
+    <input type="url" class="mt-4 form-control" id="sd" >
+
+    <div class="btn-1"><button onclick="submitValue()" class="btn btn-danger mt-5">Submit</button></div>
+    <div class="brdr"></div>
+    </div>
+    <table class="table">
+      <thead>
+        <th class="text-center">Index</th>
+        <th class="text-center">Website Name</th>
+        <th class="text-center">Visit</th>
+        <th class="text-center">Delete</th>
+        
+      </thead>
+      <tbody id="tbody">
+       <tr>
+        <td ></td>
+        <td></td>
+        <td class="text-center"></td>
+        <td></td>
+       </tr>
+      </tbody>
+    </table>
+</div>
+<script src="./JS/main.js"></script>
+</body>
+</html>

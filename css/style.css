@@ -1,0 +1,83 @@
+body{
+    background-color: #f7ecde;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.item h1{
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.item h1::before{
+    content: '';
+    position: absolute;
+    background-color: #fec260;
+    width: 210px;
+    height: 10px;
+    left:42%;
+    top: 30px;
+    bottom: 0;
+    bottom: -15px;
+    z-index: -1;
+    transition: height 0.5s , top 0.5s;
+}
+.item h1:hover::before{
+    height: 100px;
+    top: 0; 
+}
+.item .brdr{
+    margin-top: 50px;
+    border-top: 2px dashed black;
+}
+.item h2{
+    
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.item h2 i{
+    margin-right: 10px;
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+.item .btn-1 button{
+    padding: 7px 50px;
+}
+.item .btn-1 button:hover{
+    background-color: brown;
+}
+.item .btn-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td button{
+    padding: 30px;
+    width: 150px;
+    
+}
+td{
+    position: relative;
+}
+td i{
+    color: white;
+    padding: 3px;
+    margin-left: 12px;
+    margin-top: 10px;
+    position: absolute;
+}
